@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>JJ Sponsors</name>
+    <author>JoomJunk</author>
+	<creationDate>Feb 1st, 2012</creationDate>
+	<copyright>Copyright (C) 2011 - 2013 JoomJunk</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>admin@joomjunk.co.uk</authorEmail>
+    <version>1.0.6</version>
+    <description>SPONSORS_INSTALLATION</description>
+	
+    <languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jj_sponsors.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jj_sponsors.sys.ini</language>		
+    </languages>
+
+    <files>
+        <filename>mod_jj_sponsors.xml</filename>
+        <filename module="mod_jj_sponsors">mod_jj_sponsors.php</filename>
+        <filename>index.html</filename>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>css</folder>
+		<folder>tmpl</folder>
+    </files>
+	
+	<updateservers>
+		<server type="extension" name="JJ Sponsors" priority="1">http://www.joomjunk.co.uk/updates/sponsors_update.xml</server>
+	</updateservers>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="Basic">
+				<field type="spacer" name="@spacer1" class="text" label="SPONSORS_IMAGE1_SETTINGS" />
+				<field name="image1" type="radio" default="1" label="SPONSORS_IMAGE1" description="SPONSORS_IMAGEDESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="image1header" type="text" size="50" default="Header 1" label="SPONSORS_HEADERTEXT" description="SPONSORS_HEADERTEXTDESC" />
+				<field name="image1caption" type="text" size="50" default="Text goes here" label="SPONSORS_CAPTIONTEXT" description="SPONSORS_CAPTIONTEXTDESC" />
+				<field name="image1url" type="text" default="1.gif" label="SPONSORS_IMAGEFILE" description="SPONSORS_IMAGEFILEDESC" />
+				<field name="image1link" type="text" size="50" default="http://www.yourlink.com" label="SPONSORS_IMAGEURL" description="SPONSORS_URLDESC" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+			  
+				<field type="spacer" name="@spacer2" class="text" label="SPONSORS_IMAGE2_SETTINGS" />
+				<field name="image2" type="radio" default="1" label="SPONSORS_IMAGE2" description="SPONSORS_IMAGEDESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="image2header" type="text" size="50" default="Header 2" label="SPONSORS_HEADERTEXT" description="SPONSORS_HEADERTEXTDESC" />
+				<field name="image2caption" type="text" size="50" default="Text goes here" label="SPONSORS_CAPTIONTEXT" description="SPONSORS_CAPTIONTEXTDESC" />
+				<field name="image2url" type="text" default="2.gif" label="SPONSORS_IMAGEFILE" description="SPONSORS_IMAGEFILEDESC" />
+				<field name="image2link" type="text" size="50" default="http://www.yourlink.com" label="SPONSORS_IMAGEURL" description="SPONSORS_URLDESC" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+			  
+				<field type="spacer" name="@spacer3" class="text" label="SPONSORS_IMAGE3_SETTINGS" />
+				<field name="image3" type="radio" default="1" label="SPONSORS_IMAGE3" description="SPONSORS_IMAGEDESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="image3header" type="text" size="50" default="Header 3" label="SPONSORS_HEADERTEXT" description="SPONSORS_HEADERTEXTDESC" />
+				<field name="image3caption" type="text" size="50" default="Text goes here" label="SPONSORS_CAPTIONTEXT" description="SPONSORS_CAPTIONTEXTDESC" />
+				<field name="image3url" type="text" default="3.gif" label="SPONSORS_IMAGEFILE" description="SPONSORS_IMAGEFILEDESC" />
+				<field name="image3link" type="text" size="50" rows="1" default="http://www.yourlink.com" label="SPONSORS_IMAGEURL" description="SPONSORS_URLDESC" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+			  
+				<field type="spacer" name="@spacer4" class="text" label="SPONSORS_IMAGE4_SETTINGS" />
+				<field name="image4" type="radio" default="1" label="SPONSORS_IMAGE4" description="SPONSORS_IMAGEDESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="image4header" type="text" size="50" default="Header 4" label="SPONSORS_HEADERTEXT" description="SPONSORS_HEADERTEXTDESC" />
+				<field name="image4caption" type="text" size="50" default="Text goes here" label="SPONSORS_CAPTIONTEXT" description="SPONSORS_CAPTIONTEXTDESC" />
+				<field name="image4url" type="text" default="4.gif" label="SPONSORS_IMAGEFILE" description="SPONSORS_IMAGEFILEDESC" />
+				<field name="image4link" type="text" size="50" default="http://www.yourlink.com" label="SPONSORS_IMAGEURL" description="SPONSORS_URLDESC" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+			  
+				<field type="spacer" name="@spacer5" class="text" label="SPONSORS_IMAGE5_SETTINGS" />
+				<field name="image5" type="radio" default="1" label="SPONSORS_IMAGE5" description="SPONSORS_IMAGEDESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="image5header" type="text" size="50" default="Header 5" label="SPONSORS_HEADERTEXT" description="SPONSORS_HEADERTEXTDESC" />
+				<field name="image5caption" type="text" size="50" default="Text goes here" label="SPONSORS_CAPTIONTEXT" description="SPONSORS_CAPTIONTEXTDESC" />
+				<field name="image5url" type="text" default="5.gif" label="SPONSORS_IMAGEFILE" description="SPONSORS_IMAGEFILEDESC" />
+				<field name="image5link" type="text" size="50" default="http://www.yourlink.com" label="SPONSORS_IMAGEURL" description="SPONSORS_URLDESC" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+			  
+				<field type="spacer" name="@spacer6" class="text" label="SPONSORS_IMAGE6_SETTINGS" />
+				<field name="image6" type="radio" default="1" label="SPONSORS_IMAGE6" description="SPONSORS_IMAGEDESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="image6header" type="text" size="50" default="Header 6" label="SPONSORS_HEADERTEXT" description="SPONSORS_HEADERTEXTDESC" />
+				<field name="image6caption" type="text" size="50" default="Text goes here" label="SPONSORS_CAPTIONTEXT" description="SPONSORS_CAPTIONTEXTDESC" />
+				<field name="image6url" type="text" default="6.gif" label="SPONSORS_IMAGEFILE" description="SPONSORS_IMAGEFILEDESC" />
+				<field name="image6link" type="text" size="50" default="http://www.yourlink.com" label="SPONSORS_IMAGEURL" description="SPONSORS_URLDESC" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+			  
+				<field type="spacer" name="@spacer7" class="text" label="SPONSORS_IMAGE7_SETTINGS" />
+				<field name="image7" type="radio" default="1" label="SPONSORS_IMAGE7" description="SPONSORS_IMAGEDESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="image7header" type="text" size="50" default="Header 7" label="SPONSORS_HEADERTEXT" description="SPONSORS_HEADERTEXTDESC" />
+				<field name="image7caption" type="text" size="50" default="Text goes here" label="SPONSORS_CAPTIONTEXT" description="SPONSORS_CAPTIONTEXTDESC" />
+				<field name="image7url" type="text" default="7.gif" label="SPONSORS_IMAGEFILE" description="SPONSORS_IMAGEFILEDESC" />
+				<field name="image7link" type="text" size="50" default="http://www.yourlink.com" label="SPONSORS_IMAGEURL" description="SPONSORS_URLDESC" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+			  
+				<field type="spacer" name="@spacer8" class="text" label="SPONSORS_IMAGE8_SETTINGS" />
+				<field name="image8" type="radio" default="1" label="SPONSORS_IMAGE8" description="SPONSORS_IMAGEDESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="image8header" type="text" size="50" default="Header 8" label="SPONSORS_HEADERTEXT" description="SPONSORS_HEADERTEXTDESC" />
+				<field name="image8caption" type="text" size="50" default="Text goes here" label="SPONSORS_CAPTIONTEXT" description="SPONSORS_CAPTIONTEXTDESC" />
+				<field name="image8url" type="text" default="8.gif" label="SPONSORS_IMAGEFILE" description="SPONSORS_IMAGEFILEDESC" />
+				<field name="image8link" type="text" size="50" default="http://www.yourlink.com" label="SPONSORS_IMAGEURL" description="SPONSORS_URLDESC" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+			  
+				<field type="spacer" name="@spacer9" class="text" label="SPONSORS_IMAGE9_SETTINGS" />
+				<field name="image9" type="radio" default="1" label="SPONSORS_IMAGE9" description="SPONSORS_IMAGEDESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="image9header" type="text" size="50" default="Header 9" label="SPONSORS_HEADERTEXT" description="SPONSORS_HEADERTEXTDESC" />
+				<field name="image9caption" type="text" size="50" default="Text goes here" label="SPONSORS_CAPTIONTEXT" description="SPONSORS_CAPTIONTEXTDESC" />
+				<field name="image9url" type="text" default="9.gif" label="SPONSORS_IMAGEFILE" description="SPONSORS_IMAGEFILEDESC" />
+				<field name="image9link" type="text" size="50" default="http://www.yourlink.com" label="SPONSORS_IMAGEURL" description="SPONSORS_URLDESC" />
+			</fieldset>
+			
+			<fieldset name="SPONSORS_OTHER">
+				<field type="spacer" name="@spacer10" class="text" label="SPONSORS_ROW_SETTINGS" />
+				<field name="row" type="list" default="3" label="SPONSORS_IMAGESPERROW" description="SPONSORS_IMAGESPERROWDESC">
+					<option value="1">SPONSORS_VALUE1</option>
+					<option value="2">SPONSORS_VALUE2</option>
+					<option value="3">SPONSORS_VALUE3</option>
+					<option value="4">SPONSORS_VALUE4</option>
+				</field>
+
+				<field type="spacer" name="@spacer11" class="text" label="SPONSORS_BACKGROUND_SETTINGS" />				
+				<field name="background" type="text" default="bg.gif" label="SPONSORS_BACKGROUNDIMAGE" description="SPONSORS_BACKGROUNDIMAGEDESC" />
+
+				<field type="spacer" name="@spacer12" class="text" label="SPONSORS_TEXT_SETTINGS" />								
+				<field name="header_colour" type="text" default="B0E3FF" label="SPONSORS_HEADERTEXTCOLOUR" description="SPONSORS_HEADERTEXTCOLOURDESC" />
+				<field name="text_colour" type="text" default="FFFFFF" label="SPONSORS_CAPTIONTEXTCOLOUR" description="SPONSORS_CAPTIONTEXTCOLOURDESC" />
+
+				<field type="spacer" name="@spacer13" class="text" label="SPONSORS_BORDER_SETTINGS" />																
+				<field name="border_width" type="text" default="4" label="SPONSORS_BORDERWIDTH" description="SPONSORS_BORDERWIDTHDESC" />
+				<field name="border_colour" type="text" default="222222" label="SPONSORS_BORDERCOLOUR" description="SPONSORS_BORDERCOLOURDESC" />
+
+				<field type="spacer" name="@spacer14" class="text" label="SPONSORS_LINK_SETTINGS" />																				
+				<field name="tab" type="radio" default="1" label="SPONSORS_LINK" description="SPONSORS_LINKDESC">
+					<option value="0">SPONSORS_NEWTAB</option>
+					<option value="1">SPONSORS_SAMETAB</option>
+				</field>
+				
+				<field type="spacer" name="@spacer15" class="text" label="SPONSORS_OTHER_SETTINGS" />																				
+				<field name="speedin" type="text" default="1000" label="SPONSORS_SPEEDIN" description="SPONSORS_SPEEDINDESC" />
+				<field name="speedout" type="text" default="300" label="SPONSORS_SPEEDOUT" description="SPONSORS_SPEEDOUTDESC" />
+				<field name="stylein" type="list" default="easeOutBounce" label="SPONSORS_STYLEIN" description="SPONSORS_STYLEINDESC">
+					<option value="jswing">SPONSORS_JSWING</option>
+					<option value="easeOutQuad">SPONSORS_EASYOUTQUAD</option>
+					<option value="easeOutCubic">SPONSORS_EASYOUTCUBIC</option>
+					<option value="easeOutQuart">SPONSORS_EASYOUTQUART</option>
+					<option value="easeOutQuint">SPONSORS_EASYOUTQUINT</option>
+					<option value="easeOutSine">SPONSORS_EASYOUTSINE</option>
+					<option value="easeOutExpo">SPONSORS_EASYOUTEXPO</option>
+					<option value="easeOutCirc">SPONSORS_EASYOUTCIRC</option>
+					<option value="easeOutElastic">SPONSORS_EASYOUTELASTIC</option>
+					<option value="easeOutBack">SPONSORS_EASYOUTBACK</option>
+					<option value="easeOutBounce">SPONSORS_EASYOUTBOUNCE</option>
+				</field>
+				<field name="styleout" type="list" default="jswing" label="SPONSORS_STYLEOUT" description="SPONSORS_STYLEOUTDESC">
+					<option value="jswing">SPONSORS_JSWING</option>
+					<option value="easeInQuad">SPONSORS_EASYINQUAD</option>
+					<option value="easeInCubic">SPONSORS_EASYINCUBIC</option>
+					<option value="easeInQuart">SPONSORS_EASYINQUART</option>
+					<option value="easeInQuint">SPONSORS_EASYINQUINT</option>
+					<option value="easeInSine">SPONSORS_EASYINSINE</option>
+					<option value="easeInExpo">SPONSORS_EASYINEXPO</option>
+					<option value="easeInCirc">SPONSORS_EASYINCIRC</option>
+					<option value="easeInElastic">SPONSORS_EASYINELASTIC</option>
+					<option value="easeInBack">SPONSORS_EASYINBACK</option>
+					<option value="easeInBounce">SPONSORS_EASYINBOUNCE</option>
+				</field>
+				<field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

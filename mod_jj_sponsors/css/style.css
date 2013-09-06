@@ -1,0 +1,60 @@
+/** 
+ * @subpackage     JJ Sponsors
+ * @author         JoomJunk
+ * @copyright	   2011-2013 JoomJunk. All Rights Reserved
+ * @license        http://www.gnu.org/licenses/gpl-3.0.html
+ */
+
+.qitem {
+	width:126px;
+	height:126px;	
+	margin:5px 5px 5px 0px;
+	overflow:hidden;
+	position:relative;
+	float:left;
+	cursor:hand; cursor:pointer;
+	border-style: solid;
+}
+.qitem img {
+	border:0;
+	position:absolute;
+	z-index:200;
+}
+.qitem .caption {
+	position:absolute;
+	z-index:0;	
+	display:block;
+	height: 0px;
+}
+.qitem .caption h4 {
+	font-size:12px;
+	padding:3px 5px 0px 8px;
+	margin:0;
+}
+.qitem .caption p {
+	font-size:10px;	
+	padding:3px 5px 0px 8px;
+	margin:0;
+}
+
+/* Setting for corners */
+.topLeft, .topRight, .bottomLeft, .bottomRight {
+	position:absolute;
+	background-repeat: no-repeat; 
+	float:left;
+}
+.topLeft {
+	background-position: top left; 	
+} 
+.topRight {
+	background-position: top right; 
+} 
+.bottomLeft {
+	background-position: bottom left; 
+} 
+.bottomRight {
+	background-position: bottom right; 
+}
+.clear {
+	clear:both;	
+}
