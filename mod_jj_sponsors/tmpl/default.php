@@ -30,11 +30,11 @@ $javascript = 'jQuery(document).ready(function($) {'
 	. 'var speed_out = ' . $params->get('speedout', '300') . ';'
 
 	// Calculation for corners
-	. "var neg = Math.round($('.qitem').width() / 2) * (-1);"
+	. "var neg = Math.round($('#sponsor" . $id . " .qitem').width() / 2) * (-1);"
 	. 'var pos = neg * (-1);'	
 	. 'var out = pos * 2;'
 	
-	. "$('.qitem').each(function () {"
+	. "$('#sponsor" . $id . " .qitem').each(function () {"
 		. "url = $(this).find('a').attr('href');"
 		. "img = $(this).find('img').attr('src');"
 		. "alt = $(this).find('img').attr('img');"
@@ -105,7 +105,7 @@ $document->addStyleDeclaration($style);
 		
 ?>
 
-<div id="elements">
+<div id ="sponsor<?php echo $id; ?>">
 	<?php
 	$i = 1;
 	$total = 9;
