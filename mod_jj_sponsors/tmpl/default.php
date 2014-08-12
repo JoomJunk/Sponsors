@@ -11,13 +11,13 @@ defined('_JEXEC') or die('Restricted access');
 
 if ($tab == 0)
 {
-	$clickfunction = '}).click (function () {'
+	$clickfunction = '}).click(function () {'
 		. "window.open($(this).find('a').attr('href')); return false;"
 	. '});';
 }
 else
 {
-	$clickfunction = '}).click (function () {'
+	$clickfunction = '}).click(function () {'
 		. "window.location = $(this).find('a').attr('href');"
 	. '});';
 }
@@ -28,41 +28,45 @@ $javascript = 'jQuery(document).ready(function($) {'
 	. "var style_out = '" . $params->get('styleout', 'jswing') . "';"
 	. 'var speed_in = ' . $params->get('speedin', '1000') . ';'
 	. 'var speed_out = ' . $params->get('speedout', '300') . ';'
+	
+	
+	. 'var jjsponsor = $("#sponsor' . $id . ' .qitem");'
 
 	// Calculation for corners
-	. "var neg = Math.round($('#sponsor" . $id . " .qitem').width() / 2) * (-1);"
+	. "var neg = Math.round(jjsponsor.width() / 2) * (-1);"
 	. 'var pos = neg * (-1);'	
 	. 'var out = pos * 2;'
 	
-	. "$('#sponsor" . $id . " .qitem').each(function () {"
-		. "url = $(this).find('a').attr('href');"
-		. "img = $(this).find('img').attr('src');"
-		. "alt = $(this).find('img').attr('img');"
+	. "jjsponsor.each(function () {"
+		. "var self = $(this);"		
+		. "var url = self.find('a').attr('href');"
+		. "var img = self.find('img').attr('src');"
+		. "var alt = self.find('img').attr('img');"
 
 		. "$('img', this).remove();"
-		. "$(this).append('<div class=\"topLeft\"></div><div class=\"topRight\"></div><div class=\"bottomLeft\"></div><div class=\"bottomRight\"></div>');"
-		. "$(this).children('div').css('background-image','url('+ img + ')');"
+		. "self.append('<div class=\"topLeft\"></div><div class=\"topRight\"></div><div class=\"bottomLeft\"></div><div class=\"bottomRight\"></div>');"
+		. "self.children('div').css('background-image','url('+ img + ')');"
 
-		. "$(this).find('div.topLeft').css({top:0, left:0, width:pos , height:pos});"	
-		. "$(this).find('div.topRight').css({top:0, left:pos, width:pos , height:pos});"	
-		. "$(this).find('div.bottomLeft').css({bottom:0, left:0, width:pos , height:pos});"	
-		. "$(this).find('div.bottomRight').css({bottom:0, left:pos, width:pos , height:pos});"	
+		. "self.find('div.topLeft').css({top:0, left:0, width:pos , height:pos});"	
+		. "self.find('div.topRight').css({top:0, left:pos, width:pos , height:pos});"	
+		. "self.find('div.bottomLeft').css({bottom:0, left:0, width:pos , height:pos});"	
+		. "self.find('div.bottomRight').css({bottom:0, left:pos, width:pos , height:pos});"	
 
 	. '}).hover(function () {'
-
-		. "$(this).find('div.topLeft').stop(false, true).animate({top:neg, left:neg}, {duration:speed_out, easing:style_out});"	
-		. "$(this).find('div.topRight').stop(false, true).animate({top:neg, left:out}, {duration:speed_out, easing:style_out});"	
-		. "$(this).find('div.bottomLeft').stop(false, true).animate({bottom:neg, left:neg}, {duration:speed_out, easing:style_out});"	
-		. "$(this).find('div.bottomRight').stop(false, true).animate({bottom:neg, left:out}, {duration:speed_out, easing:style_out});"	
+		. "var self = $(this);"
+		. "self.find('div.topLeft').stop(false, true).animate({top:neg, left:neg}, {duration:speed_out, easing:style_out});"	
+		. "self.find('div.topRight').stop(false, true).animate({top:neg, left:out}, {duration:speed_out, easing:style_out});"	
+		. "self.find('div.bottomLeft').stop(false, true).animate({bottom:neg, left:neg}, {duration:speed_out, easing:style_out});"	
+		. "self.find('div.bottomRight').stop(false, true).animate({bottom:neg, left:out}, {duration:speed_out, easing:style_out});"	
 
 	. '},'
 
 	. 'function () {'
-
-		. "$(this).find('div.topLeft').stop(false, true).animate({top:0, left:0}, {duration:speed_in, easing:style_in});"	
-		. "$(this).find('div.topRight').stop(false, true).animate({top:0, left:pos}, {duration:speed_in, easing:style_in});"	
-		. "$(this).find('div.bottomLeft').stop(false, true).animate({bottom:0, left:0}, {duration:speed_in, easing:style_in});"	
-		. "$(this).find('div.bottomRight').stop(false, true).animate({bottom:0, left:pos}, {duration:speed_in, easing:style_in});"	
+		. "var self = $(this);"	
+		. "self.find('div.topLeft').stop(false, true).animate({top:0, left:0}, {duration:speed_in, easing:style_in});"	
+		. "self.find('div.topRight').stop(false, true).animate({top:0, left:pos}, {duration:speed_in, easing:style_in});"	
+		. "self.find('div.bottomLeft').stop(false, true).animate({bottom:0, left:0}, {duration:speed_in, easing:style_in});"	
+		. "self.find('div.bottomRight').stop(false, true).animate({bottom:0, left:pos}, {duration:speed_in, easing:style_in});"	
 	. $clickfunction
 . '});';
 
@@ -74,7 +78,7 @@ if(version_compare(JVERSION,'3.0','ge')) {
 else {
 	if(!JFactory::getApplication()->get('jquery')){
 		JFactory::getApplication()->set('jquery',true);
-		$document->addScript(JURI::root() . "modules/mod_jj_sponsors/js/jquery.js");
+		$document->addScript(JUri::root() . "modules/mod_jj_sponsors/js/jquery.js");
 	}
 }
 
