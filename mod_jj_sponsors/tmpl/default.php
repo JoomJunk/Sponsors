@@ -22,7 +22,7 @@ else
 	. '});';
 }
 
-$javascript = 'jQuery(document).ready(function($) {'
+$js = 'jQuery(document).ready(function($) {'
 	// Custom settings
 	. "var style_in = '" . $params->get('stylein', 'easeOutBounce') . "';"
 	. "var style_out = '" . $params->get('styleout', 'jswing') . "';"
@@ -70,26 +70,31 @@ $javascript = 'jQuery(document).ready(function($) {'
 	. $clickfunction
 . '});';
 
-$document = JFactory::getDocument();
+$doc = JFactory::getDocument();
 
-if(version_compare(JVERSION,'3.0','ge')) {
+if(version_compare(JVERSION,'3.0','ge')) 
+{
 	JHtml::_('jquery.framework');
 } 
-else {
-	if(!JFactory::getApplication()->get('jquery')){
+else 
+{
+	if(!JFactory::getApplication()->get('jquery'))
+	{
 		JFactory::getApplication()->set('jquery',true);
-		$document->addScript(JUri::root() . "modules/mod_jj_sponsors/js/jquery.js");
+		$document->addScript($module_base . 'js/jquery.js');
 	}
 }
 
-$document->addScript($module_base . 'js/jquery.easing.1.3.js');
-$document->addScriptDeclaration($javascript);
+$doc->addScript($module_base . 'js/jquery.easing.1.3.js');
+$doc->addScriptDeclaration($js);
 
 // Add styles
-$document->addStyleSheet($module_base . 'css/style.css');
+// added JHtml ready for when the CSS has been moved to the media folder/ remove this line after
+//JHtml::_('stylesheet', 'mod_jj_sponsors/style.css', array(), true); 
+$doc->addStyleSheet($module_base . 'css/style.css');
 
 $style ='.qitem {'
-			. "background:url('" . JUri::base() . "modules/mod_jj_sponsors/images/" . $background . "') no-repeat;"
+			. "background:url('" . $image_base . $background . "') no-repeat;"
 			. 'border-top-width:' . $border_width . 'px;'
 			. 'border-bottom-width:' . $border_width . 'px;'
 			. 'border-left-width:' . $border_width . 'px;'
@@ -105,11 +110,11 @@ $style ='.qitem {'
 		. '.qitem .caption h4 {'
 			. 'color:#' . $header_colour . ';'
 			. '}';
-$document->addStyleDeclaration($style);
+$doc->addStyleDeclaration($style);
 		
 ?>
 
-<div id ="sponsor<?php echo $id; ?>">
+<div id="sponsor<?php echo $id; ?>" class="clearfix">
 	<?php
 	$i = 1;
 	$total = 9;
@@ -124,7 +129,7 @@ $document->addStyleDeclaration($style);
 		<?php
 		endif;
 
-		if ($i % $row === 0) : ?><div class="clear"></div><?php endif;
+		if ($i % $row === 0) : ?><div class="clearfix"></div><?php endif;
 
 		$i++;
 	}
