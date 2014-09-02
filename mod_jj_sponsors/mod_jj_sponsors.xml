@@ -3,10 +3,10 @@
     <name>JJ Sponsors</name>
     <author>JoomJunk</author>
 	<creationDate>Feb 1st, 2012</creationDate>
-	<copyright>Copyright (C) 2011 - 2013 JoomJunk</copyright>
+	<copyright>Copyright (C) 2011 - 2014 JoomJunk</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
 	<authorEmail>admin@joomjunk.co.uk</authorEmail>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
     <description>SPONSORS_INSTALLATION</description>
 	
     <languages>
@@ -32,7 +32,7 @@
 		<fields name="params">
 			<fieldset name="Basic">
 				<field type="spacer" name="@spacer1" class="text" label="SPONSORS_IMAGE1_SETTINGS" />
-				<field name="image1" type="radio" default="1" label="SPONSORS_IMAGE1" description="SPONSORS_IMAGEDESC">
+				<field name="image1" type="radio" class="btn-group" default="1" label="SPONSORS_IMAGE1" description="SPONSORS_IMAGEDESC">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
@@ -43,7 +43,7 @@
 				<field name="@spacer" type="spacer" default="" label="" description="" />
 			  
 				<field type="spacer" name="@spacer2" class="text" label="SPONSORS_IMAGE2_SETTINGS" />
-				<field name="image2" type="radio" default="1" label="SPONSORS_IMAGE2" description="SPONSORS_IMAGEDESC">
+				<field name="image2" type="radio" class="btn-group" default="1" label="SPONSORS_IMAGE2" description="SPONSORS_IMAGEDESC">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
@@ -54,7 +54,7 @@
 				<field name="@spacer" type="spacer" default="" label="" description="" />
 			  
 				<field type="spacer" name="@spacer3" class="text" label="SPONSORS_IMAGE3_SETTINGS" />
-				<field name="image3" type="radio" default="1" label="SPONSORS_IMAGE3" description="SPONSORS_IMAGEDESC">
+				<field name="image3" type="radio" class="btn-group" default="1" label="SPONSORS_IMAGE3" description="SPONSORS_IMAGEDESC">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
@@ -65,7 +65,7 @@
 				<field name="@spacer" type="spacer" default="" label="" description="" />
 			  
 				<field type="spacer" name="@spacer4" class="text" label="SPONSORS_IMAGE4_SETTINGS" />
-				<field name="image4" type="radio" default="1" label="SPONSORS_IMAGE4" description="SPONSORS_IMAGEDESC">
+				<field name="image4" type="radio" class="btn-group" default="1" label="SPONSORS_IMAGE4" description="SPONSORS_IMAGEDESC">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
@@ -76,7 +76,7 @@
 				<field name="@spacer" type="spacer" default="" label="" description="" />
 			  
 				<field type="spacer" name="@spacer5" class="text" label="SPONSORS_IMAGE5_SETTINGS" />
-				<field name="image5" type="radio" default="1" label="SPONSORS_IMAGE5" description="SPONSORS_IMAGEDESC">
+				<field name="image5" type="radio" class="btn-group" default="1" label="SPONSORS_IMAGE5" description="SPONSORS_IMAGEDESC">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
@@ -87,7 +87,7 @@
 				<field name="@spacer" type="spacer" default="" label="" description="" />
 			  
 				<field type="spacer" name="@spacer6" class="text" label="SPONSORS_IMAGE6_SETTINGS" />
-				<field name="image6" type="radio" default="1" label="SPONSORS_IMAGE6" description="SPONSORS_IMAGEDESC">
+				<field name="image6" type="radio" class="btn-group" default="1" label="SPONSORS_IMAGE6" description="SPONSORS_IMAGEDESC">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
@@ -98,7 +98,7 @@
 				<field name="@spacer" type="spacer" default="" label="" description="" />
 			  
 				<field type="spacer" name="@spacer7" class="text" label="SPONSORS_IMAGE7_SETTINGS" />
-				<field name="image7" type="radio" default="1" label="SPONSORS_IMAGE7" description="SPONSORS_IMAGEDESC">
+				<field name="image7" type="radio" class="btn-group" default="1" label="SPONSORS_IMAGE7" description="SPONSORS_IMAGEDESC">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
@@ -109,7 +109,7 @@
 				<field name="@spacer" type="spacer" default="" label="" description="" />
 			  
 				<field type="spacer" name="@spacer8" class="text" label="SPONSORS_IMAGE8_SETTINGS" />
-				<field name="image8" type="radio" default="1" label="SPONSORS_IMAGE8" description="SPONSORS_IMAGEDESC">
+				<field name="image8" type="radio" class="btn-group" default="1" label="SPONSORS_IMAGE8" description="SPONSORS_IMAGEDESC">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
@@ -120,7 +120,7 @@
 				<field name="@spacer" type="spacer" default="" label="" description="" />
 			  
 				<field type="spacer" name="@spacer9" class="text" label="SPONSORS_IMAGE9_SETTINGS" />
-				<field name="image9" type="radio" default="1" label="SPONSORS_IMAGE9" description="SPONSORS_IMAGEDESC">
+				<field name="image9" type="radio" class="btn-group" default="1" label="SPONSORS_IMAGE9" description="SPONSORS_IMAGEDESC">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
@@ -151,7 +151,7 @@
 				<field name="border_colour" type="text" default="222222" label="SPONSORS_BORDERCOLOUR" description="SPONSORS_BORDERCOLOURDESC" />
 
 				<field type="spacer" name="@spacer14" class="text" label="SPONSORS_LINK_SETTINGS" />																				
-				<field name="tab" type="radio" default="1" label="SPONSORS_LINK" description="SPONSORS_LINKDESC">
+				<field name="tab" type="radio" class="btn-group" default="1" label="SPONSORS_LINK" description="SPONSORS_LINKDESC">
 					<option value="0">SPONSORS_NEWTAB</option>
 					<option value="1">SPONSORS_SAMETAB</option>
 				</field>

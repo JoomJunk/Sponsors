@@ -1,7 +1,7 @@
 /** 
  * @subpackage     JJ Sponsors
  * @author         JoomJunk
- * @copyright	   2011-2013 JoomJunk. All Rights Reserved
+ * @copyright	   2011-2014 JoomJunk. All Rights Reserved
  * @license        http://www.gnu.org/licenses/gpl-3.0.html
  */
 
@@ -12,7 +12,8 @@
 	overflow:hidden;
 	position:relative;
 	float:left;
-	cursor:hand; cursor:pointer;
+	cursor:hand; 
+	cursor:pointer;
 	border-style: solid;
 }
 .qitem img {
@@ -55,6 +56,20 @@
 .bottomRight {
 	background-position: bottom right; 
 }
-.clear {
-	clear:both;	
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after{
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0; 
+}
+.clearfix:after {
+    clear: both; 
+}
+.clearfix {
+    zoom: 1; 
 }
