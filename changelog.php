@@ -14,6 +14,10 @@ $ -> Language fix or change
 - -> Removed
 ! -> Note
 
+Version 1.0.7
+# Fixed bug with multiple instances
+^ Code enhancements
+
 Version 1.0.6
 # Version check for different methods of importing jQuery
 + jQuery 1.10.1 included with the module

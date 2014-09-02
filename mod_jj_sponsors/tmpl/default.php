@@ -2,7 +2,7 @@
 /** 
  * @subpackage     JJ Sponsors
  * @author         JoomJunk
- * @copyright	   2011-2013 JoomJunk. All Rights Reserved
+ * @copyright	   2011-2014 JoomJunk. All Rights Reserved
  * @license        http://www.gnu.org/licenses/gpl-3.0.html
  */
 
@@ -89,8 +89,6 @@ $doc->addScript($module_base . 'js/jquery.easing.1.3.js');
 $doc->addScriptDeclaration($js);
 
 // Add styles
-// added JHtml ready for when the CSS has been moved to the media folder/ remove this line after
-//JHtml::_('stylesheet', 'mod_jj_sponsors/style.css', array(), true); 
 $doc->addStyleSheet($module_base . 'css/style.css');
 
 $style ='.qitem {'
