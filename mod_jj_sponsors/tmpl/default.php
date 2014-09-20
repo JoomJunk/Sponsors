@@ -23,12 +23,12 @@ else
 }
 
 $js = 'jQuery(document).ready(function($) {'
+
 	// Custom settings
-	. "var style_in = '" . $params->get('stylein', 'easeOutBounce') . "';"
-	. "var style_out = '" . $params->get('styleout', 'jswing') . "';"
-	. 'var speed_in = ' . $params->get('speedin', '1000') . ';'
-	. 'var speed_out = ' . $params->get('speedout', '300') . ';'
-	
+	. "var style_in 	= '" . $stylein . "';"
+	. "var style_out 	= '" . $styleout . "';"
+	. 'var speed_in 	= ' . $speedin . ';'
+	. 'var speed_out 	= ' . $speedout . ';'
 	
 	. 'var jjsponsor = $("#sponsor' . $id . ' .qitem");'
 
@@ -101,13 +101,15 @@ $style ='.qitem {'
 			. 'border-bottom-color:#' . $border_colour . ';'
 			. 'border-left-color:#' . $border_colour . ';'
 			. 'border-right-color:#' . $border_colour . ';'
-			. '}'
+			. 'width:' . $dimensions . ';'
+			. 'height:' . $dimensions . ';'
+		. '}'
 		. '.qitem .caption {'
 			. 'color:#' . $text_colour . ';'
-			. '}'
+		. '}'
 		. '.qitem .caption h4 {'
 			. 'color:#' . $header_colour . ';'
-			. '}';
+		. '}';
 $doc->addStyleDeclaration($style);
 		
 ?>

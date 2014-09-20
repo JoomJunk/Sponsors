@@ -10,20 +10,25 @@
 defined( '_JEXEC' ) or die( 'Restricted access' );
 
 // Get the module wide params
-$row = $params->get('row');
-$header_colour = $params->get('header_colour');
-$text_colour = $params->get('text_colour');
-$background = $params->get('background');
-$border_width = $params->get('border_width');
-$border_colour = $params->get('border_colour');
-$tab = $params->get('tab', '1');
+$row 			= $params->get('row');
+$header_colour 	= $params->get('header_colour');
+$text_colour 	= $params->get('text_colour');
+$background 	= $params->get('background');
+$border_width 	= $params->get('border_width');
+$border_colour 	= $params->get('border_colour');
+$tab 			= $params->get('tab', '1');
+$dimensions 	= $params->get('dimensions', '126');
+$stylein 		= $params->get('stylein', 'easeOutBounce');
+$styleout 		= $params->get('styleout', 'jswing');
+$speedin 		= $params->get('speedin', '1000');
+$speedout 		= $params->get('speedout', '300');
 
 // Define the base paths
-$module_base = JUri::base() . 'modules/mod_jj_sponsors/';
-$image_base = $module_base . 'images/';
+$module_base 	= JUri::base() . 'modules/mod_jj_sponsors/';
+$image_base 	= $module_base . 'images/';
 
 // Define a unique id for the js
-$id = $module->id;
+$id 			= $module->id;
 
 //Include the layout file
 require(JModuleHelper::getLayoutPath('mod_jj_sponsors'));

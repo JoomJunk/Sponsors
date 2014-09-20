@@ -132,6 +132,7 @@
 			
 			<fieldset name="SPONSORS_OTHER">
 				<field type="spacer" name="@spacer10" class="text" label="SPONSORS_ROW_SETTINGS" />
+				<field name="dimensions" type="text" default="126px" label="SPONSORS_DIMENSIONS" description="SPONSORS_DIMENSIONSDESC" />
 				<field name="row" type="list" default="3" label="SPONSORS_IMAGESPERROW" description="SPONSORS_IMAGESPERROWDESC">
 					<option value="1">SPONSORS_VALUE1</option>
 					<option value="2">SPONSORS_VALUE2</option>
