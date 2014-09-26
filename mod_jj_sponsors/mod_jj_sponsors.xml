@@ -6,7 +6,7 @@
 	<copyright>Copyright (C) 2011 - 2014 JoomJunk</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
 	<authorEmail>admin@joomjunk.co.uk</authorEmail>
-    <version>1.0.7</version>
+    <version>1.0.8</version>
     <description>SPONSORS_INSTALLATION</description>
 	
     <languages>
@@ -144,12 +144,12 @@
 				<field name="background" type="text" default="bg.gif" label="SPONSORS_BACKGROUNDIMAGE" description="SPONSORS_BACKGROUNDIMAGEDESC" />
 
 				<field type="spacer" name="@spacer12" class="text" label="SPONSORS_TEXT_SETTINGS" />								
-				<field name="header_colour" type="text" default="B0E3FF" label="SPONSORS_HEADERTEXTCOLOUR" description="SPONSORS_HEADERTEXTCOLOURDESC" />
-				<field name="text_colour" type="text" default="FFFFFF" label="SPONSORS_CAPTIONTEXTCOLOUR" description="SPONSORS_CAPTIONTEXTCOLOURDESC" />
+				<field name="header_colour" type="color" default="#B0E3FF" label="SPONSORS_HEADERTEXTCOLOUR" description="SPONSORS_HEADERTEXTCOLOURDESC" />
+				<field name="text_colour" type="color" default="#FFFFFF" label="SPONSORS_CAPTIONTEXTCOLOUR" description="SPONSORS_CAPTIONTEXTCOLOURDESC" />
 
 				<field type="spacer" name="@spacer13" class="text" label="SPONSORS_BORDER_SETTINGS" />																
 				<field name="border_width" type="text" default="4" label="SPONSORS_BORDERWIDTH" description="SPONSORS_BORDERWIDTHDESC" />
-				<field name="border_colour" type="text" default="222222" label="SPONSORS_BORDERCOLOUR" description="SPONSORS_BORDERCOLOURDESC" />
+				<field name="border_colour" type="color" default="#222222" label="SPONSORS_BORDERCOLOUR" description="SPONSORS_BORDERCOLOURDESC" />
 
 				<field type="spacer" name="@spacer14" class="text" label="SPONSORS_LINK_SETTINGS" />																				
 				<field name="tab" type="radio" class="btn-group" default="1" label="SPONSORS_LINK" description="SPONSORS_LINKDESC">

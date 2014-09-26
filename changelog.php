@@ -14,6 +14,10 @@ $ -> Language fix or change
 - -> Removed
 ! -> Note
 
+Version 1.0.8
++ Ability to set generic image size
+^ Convert to colour type fields
+
 Version 1.0.7
 # Fixed bug with multiple instances
 ^ Code enhancements
