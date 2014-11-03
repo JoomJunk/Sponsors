@@ -81,7 +81,7 @@ else
 	if(!JFactory::getApplication()->get('jquery'))
 	{
 		JFactory::getApplication()->set('jquery',true);
-		$document->addScript($module_base . 'js/jquery.js');
+		$doc->addScript($module_base . 'js/jquery.js');
 	}
 }
 
